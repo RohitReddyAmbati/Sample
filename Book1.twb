@@ -1,0 +1,653 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20232.23.0805.0415                               -->
+<workbook original-version='18.1' source-build='2023.2.1 (20232.23.0805.0415)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='data' inline='true' name='federated.13kipx9047a8mg1gf0ilf0ebcj2x' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='data' name='textscan.0waatwy067fj1y1as0tcl1qxfm2w'>
+            <connection class='textscan' directory='G:/truist' filename='data.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0waatwy067fj1y1as0tcl1qxfm2w' name='data.csv' table='[data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='X' ordinal='1' />
+            <column datatype='integer' name='id' ordinal='2' />
+            <column datatype='integer' name='age' ordinal='3' />
+            <column datatype='string' name='job' ordinal='4' />
+            <column datatype='string' name='marital' ordinal='5' />
+            <column datatype='string' name='education' ordinal='6' />
+            <column datatype='string' name='default' ordinal='7' />
+            <column datatype='integer' name='balance' ordinal='8' />
+            <column datatype='string' name='housing' ordinal='9' />
+            <column datatype='string' name='loan' ordinal='10' />
+            <column datatype='string' name='contact' ordinal='11' />
+            <column datatype='integer' name='day' ordinal='12' />
+            <column datatype='string' name='month' ordinal='13' />
+            <column datatype='integer' name='duration' ordinal='14' />
+            <column datatype='integer' name='campaign' ordinal='15' />
+            <column datatype='integer' name='pdays' ordinal='16' />
+            <column datatype='integer' name='previous' ordinal='17' />
+            <column datatype='string' name='poutcome' ordinal='18' />
+            <column datatype='integer' name='cd' ordinal='19' />
+            <column datatype='string' name='generation' ordinal='20' />
+            <column datatype='string' name='state' ordinal='21' />
+            <column datatype='integer' name='zipcode' ordinal='22' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0waatwy067fj1y1as0tcl1qxfm2w' name='data.csv' table='[data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='X' ordinal='1' />
+            <column datatype='integer' name='id' ordinal='2' />
+            <column datatype='integer' name='age' ordinal='3' />
+            <column datatype='string' name='job' ordinal='4' />
+            <column datatype='string' name='marital' ordinal='5' />
+            <column datatype='string' name='education' ordinal='6' />
+            <column datatype='string' name='default' ordinal='7' />
+            <column datatype='integer' name='balance' ordinal='8' />
+            <column datatype='string' name='housing' ordinal='9' />
+            <column datatype='string' name='loan' ordinal='10' />
+            <column datatype='string' name='contact' ordinal='11' />
+            <column datatype='integer' name='day' ordinal='12' />
+            <column datatype='string' name='month' ordinal='13' />
+            <column datatype='integer' name='duration' ordinal='14' />
+            <column datatype='integer' name='campaign' ordinal='15' />
+            <column datatype='integer' name='pdays' ordinal='16' />
+            <column datatype='integer' name='previous' ordinal='17' />
+            <column datatype='string' name='poutcome' ordinal='18' />
+            <column datatype='integer' name='cd' ordinal='19' />
+            <column datatype='string' name='generation' ordinal='20' />
+            <column datatype='string' name='state' ordinal='21' />
+            <column datatype='integer' name='zipcode' ordinal='22' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data.csv_D4AF4BED1459465BA134F425316FC13C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>X</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[X]</local-name>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias>X</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data.csv_D4AF4BED1459465BA134F425316FC13C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[id]</local-name>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data.csv_D4AF4BED1459465BA134F425316FC13C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[age]</local-name>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias>age</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data.csv_D4AF4BED1459465BA134F425316FC13C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>job</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[job]</local-name>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias>job</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data.csv_D4AF4BED1459465BA134F425316FC13C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>marital</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[marital]</local-name>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias>marital</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data.csv_D4AF4BED1459465BA134F425316FC13C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>education</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[education]</local-name>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias>education</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data.csv_D4AF4BED1459465BA134F425316FC13C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>default</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[default]</local-name>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias>default</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data.csv_D4AF4BED1459465BA134F425316FC13C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>balance</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[balance]</local-name>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias>balance</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data.csv_D4AF4BED1459465BA134F425316FC13C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>housing</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[housing]</local-name>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias>housing</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data.csv_D4AF4BED1459465BA134F425316FC13C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>loan</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[loan]</local-name>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias>loan</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data.csv_D4AF4BED1459465BA134F425316FC13C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>contact</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[contact]</local-name>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias>contact</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data.csv_D4AF4BED1459465BA134F425316FC13C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>day</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[day]</local-name>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias>day</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data.csv_D4AF4BED1459465BA134F425316FC13C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>month</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[month]</local-name>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias>month</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data.csv_D4AF4BED1459465BA134F425316FC13C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>duration</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[duration]</local-name>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias>duration</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data.csv_D4AF4BED1459465BA134F425316FC13C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>campaign</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[campaign]</local-name>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias>campaign</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data.csv_D4AF4BED1459465BA134F425316FC13C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pdays</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[pdays]</local-name>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias>pdays</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data.csv_D4AF4BED1459465BA134F425316FC13C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>previous</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[previous]</local-name>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias>previous</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data.csv_D4AF4BED1459465BA134F425316FC13C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>poutcome</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[poutcome]</local-name>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias>poutcome</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data.csv_D4AF4BED1459465BA134F425316FC13C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cd</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[cd]</local-name>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias>cd</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data.csv_D4AF4BED1459465BA134F425316FC13C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>generation</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[generation]</local-name>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias>generation</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data.csv_D4AF4BED1459465BA134F425316FC13C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[state]</local-name>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias>state</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data.csv_D4AF4BED1459465BA134F425316FC13C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>zipcode</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[zipcode]</local-name>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias>zipcode</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data.csv_D4AF4BED1459465BA134F425316FC13C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='data.csv' datatype='table' name='[__tableau_internal_object_id__].[data.csv_D4AF4BED1459465BA134F425316FC13C]' role='measure' type='quantitative' />
+      <column caption='Age' datatype='integer' name='[age]' role='measure' type='quantitative' />
+      <column caption='Balance' datatype='integer' name='[balance]' role='measure' type='quantitative' />
+      <column caption='Campaign' datatype='integer' name='[campaign]' role='measure' type='quantitative' />
+      <column caption='Cd' datatype='integer' name='[cd]' role='measure' type='quantitative' />
+      <column caption='Contact' datatype='string' name='[contact]' role='dimension' type='nominal' />
+      <column caption='Day' datatype='integer' name='[day]' role='dimension' type='quantitative' />
+      <column caption='Default' datatype='string' name='[default]' role='dimension' type='nominal' />
+      <column caption='Duration' datatype='integer' name='[duration]' role='measure' type='quantitative' />
+      <column caption='Education' datatype='string' name='[education]' role='dimension' type='nominal' />
+      <column caption='Generation' datatype='string' name='[generation]' role='dimension' type='nominal' />
+      <column caption='Housing' datatype='string' name='[housing]' role='dimension' type='nominal' />
+      <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+      <column caption='Job' datatype='string' name='[job]' role='dimension' type='nominal' />
+      <column caption='Loan' datatype='string' name='[loan]' role='dimension' type='nominal' />
+      <column caption='Marital' datatype='string' name='[marital]' role='dimension' type='nominal' />
+      <column caption='Month' datatype='string' name='[month]' role='dimension' type='nominal' />
+      <column caption='Pdays' datatype='integer' name='[pdays]' role='measure' type='quantitative' />
+      <column caption='Poutcome' datatype='string' name='[poutcome]' role='dimension' type='nominal' />
+      <column caption='Previous' datatype='integer' name='[previous]' role='measure' type='quantitative' />
+      <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column aggregation='Sum' caption='Zipcode' datatype='integer' default-format='*00000' name='[zipcode]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column-instance column='[loan]' derivation='None' name='[none:loan:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:loan:nk]' type='palette'>
+            <map to='#76b7b2'>
+              <bucket>&quot;yes&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;no&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='data.csv' id='data.csv_D4AF4BED1459465BA134F425316FC13C'>
+            <properties context=''>
+              <relation connection='textscan.0waatwy067fj1y1as0tcl1qxfm2w' name='data.csv' table='[data#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='integer' name='X' ordinal='1' />
+                  <column datatype='integer' name='id' ordinal='2' />
+                  <column datatype='integer' name='age' ordinal='3' />
+                  <column datatype='string' name='job' ordinal='4' />
+                  <column datatype='string' name='marital' ordinal='5' />
+                  <column datatype='string' name='education' ordinal='6' />
+                  <column datatype='string' name='default' ordinal='7' />
+                  <column datatype='integer' name='balance' ordinal='8' />
+                  <column datatype='string' name='housing' ordinal='9' />
+                  <column datatype='string' name='loan' ordinal='10' />
+                  <column datatype='string' name='contact' ordinal='11' />
+                  <column datatype='integer' name='day' ordinal='12' />
+                  <column datatype='string' name='month' ordinal='13' />
+                  <column datatype='integer' name='duration' ordinal='14' />
+                  <column datatype='integer' name='campaign' ordinal='15' />
+                  <column datatype='integer' name='pdays' ordinal='16' />
+                  <column datatype='integer' name='previous' ordinal='17' />
+                  <column datatype='string' name='poutcome' ordinal='18' />
+                  <column datatype='integer' name='cd' ordinal='19' />
+                  <column datatype='string' name='generation' ordinal='20' />
+                  <column datatype='string' name='state' ordinal='21' />
+                  <column datatype='integer' name='zipcode' ordinal='22' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Financial Stability'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='data' name='federated.13kipx9047a8mg1gf0ilf0ebcj2x' />
+          </datasources>
+          <datasource-dependencies datasource='federated.13kipx9047a8mg1gf0ilf0ebcj2x'>
+            <column caption='Balance' datatype='integer' name='[balance]' role='measure' type='quantitative' />
+            <column caption='Cd' datatype='integer' name='[cd]' role='measure' type='quantitative' />
+            <column caption='Loan' datatype='string' name='[loan]' role='dimension' type='nominal' />
+            <column-instance column='[loan]' derivation='None' name='[none:loan:nk]' pivot='key' type='nominal' />
+            <column-instance column='[balance]' derivation='Sum' name='[sum:balance:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[cd]' derivation='Sum' name='[sum:cd:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.13kipx9047a8mg1gf0ilf0ebcj2x].[sum:balance:qk]' palette='blue_10_0' reverse='true' type='interpolated' />
+            <encoding attr='color' field='[federated.13kipx9047a8mg1gf0ilf0ebcj2x].[sum:cd:qk]' palette='tableau-map-temperatur' reverse='true' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.13kipx9047a8mg1gf0ilf0ebcj2x].[sum:cd:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.13kipx9047a8mg1gf0ilf0ebcj2x].[sum:balance:qk]</rows>
+        <cols>[federated.13kipx9047a8mg1gf0ilf0ebcj2x].[none:loan:nk]</cols>
+      </table>
+      <simple-id uuid='{D72F4044-2901-4A70-9EA8-923F0F9AEE2B}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Financial Stability'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.13kipx9047a8mg1gf0ilf0ebcj2x].[sum:cd:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7E061EA7-6318-47B8-9FFD-08D63F8A4835}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Financial Stability' width='192'>
+      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
+      rkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
